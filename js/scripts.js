@@ -5,6 +5,6 @@ $(document).ready(function() {
       this.size = size;
     }
     
-    Contact.prototype.fullName = function() {
+    myPizza.prototype.pizzaOrder = function() {
       return "You've ordered a " + this.size + " pizza with " + this.toppings;
     };
