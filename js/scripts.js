@@ -1,12 +1,12 @@
 $(document).ready(function() {
   $("#submitForm").click(function(event) {
-    function myPizza([toppings], size) {
-      this.toppings = toppings;
-      this.size = size;
+    function Pizza([toppings], size, delivery) {
+      this.pizzaToppings = toppings;
+      this.pizzaSize = size;
+      this.deliveryMethod = delivery;
     }
-    
-    myPizza.prototype.pizzaOrder = function() {
-      return "You've ordered a " + this.size + " pizza with " + this.toppings;
-    };
 
-    myPizza.prototype.cost = function(){}
+Pizza.prototype.yourOrder = function() {
+  return "Your " + this.pizzaSize + " Krusty Krab pizza with " + this.pizzaToppings + " & our secret sauce is on it's way! Thanks for your order, and more importantly; your money! Arr-ar-ar-ar-ar-ar!";
+};
+
