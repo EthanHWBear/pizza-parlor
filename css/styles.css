@@ -1,6 +1,10 @@
 body {
-  background-image: url(sponge-back.jpeg);
+  font-family:monospace;
+  background-color:rgb(129, 235, 235);
+  font-weight: 800;
+  text-anchor: middle;
 }
+]
 h1 {
   color:rgb(86, 206, 166);
 }
