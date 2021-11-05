@@ -20,7 +20,7 @@ Pizza.prototype.price = function() {
     this.price += 2;
   } else if (this.pizzaToppings === "Krabby Patty secret formula (discontinued)"){
     this.price += 3;
-  } else (this.pizzaToppings === "Coral") {
+  } else (this.pizzaToppings === "Coral")
     this.price += 1;
   }
 
@@ -28,16 +28,14 @@ Pizza.prototype.price = function() {
     this.price += 0;
   } else if (this.pizzaSize === "Large") {
     this.price += 4
-  } else (this.pizzaSize === "WUMBO") {
+  } else (this.pizzaSize === "WUMBO")
     this.price += 250
-  }
 
   if (this.delivery === "byFoot") {
     this.price -= 3;
   } else if (this.delivery === "Boat") {
     this.price +=5;
-  } else (this.delivery === "A Rock") {
+  } else (this.delivery === "A Rock")
     this.price +=200;
-  };
 });
 
