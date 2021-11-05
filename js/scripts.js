@@ -10,3 +10,4 @@ $(document).ready(function() {
     };
 
     myPizza.prototype.cost = function(){}
+    
