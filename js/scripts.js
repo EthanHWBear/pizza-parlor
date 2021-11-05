@@ -8,6 +8,7 @@ $(document).ready(function() {
       this.deliveryMethod = delivery;
       this.price = price;
     }
+  });
 
 
 //USER-INTERFACE LOGIC
@@ -21,6 +22,7 @@ Pizza.prototype.price = function() {
     this.price += 3;
   } else (this.pizzaToppings === "Coral") {
     this.price += 1;
+  }
 
   if (this.pizzaSize === "Medium") {
     this.price += 0;
@@ -36,5 +38,6 @@ Pizza.prototype.price = function() {
     this.price +=5;
   } else (this.delivery === "A Rock") {
     this.price +=200;
-  }
-}
+  };
+});
+
