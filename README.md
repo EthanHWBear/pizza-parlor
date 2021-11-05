@@ -35,7 +35,8 @@ _{A website designed to showcase competencies in constructors, objects, and prot
 
 ## Known Bugs
 
-* _No known bugs at the time of publishing._
+* _JS script is not tied successfully to HTML._
+* _ ._
 
 #
 
