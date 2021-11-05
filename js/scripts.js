@@ -2,7 +2,7 @@
 
 $(document).ready(function() {
   $("#submitForm").click(function(event) {
-    function Pizza([toppings], size, delivery) {
+    function pizza([toppings], size, delivery) {
       this.pizzaToppings = toppings;
       this.pizzaSize = size;
       this.deliveryMethod = delivery;
@@ -10,12 +10,8 @@ $(document).ready(function() {
     }
   });
 
-
-//USER-INTERFACE LOGIC
-
-  
 //Pizza Prices
-Pizza.prototype.price = function() {
+pizza.prototype.price = function() {
   if (this.pizzaToppings === "Anchovies") {
     this.price += 2;
   } else if (this.pizzaToppings === "Krabby Patty secret formula (discontinued)"){
@@ -31,11 +27,13 @@ Pizza.prototype.price = function() {
   } else (this.pizzaSize === "WUMBO")
     this.price += 250
 
-  if (this.delivery === "byFoot") {
+  if (this.deliveryMethod === "byFoot") {
     this.price -= 3;
-  } else if (this.delivery === "Boat") {
+  } else if (this.deliveryMethod === "Boat") {
     this.price +=5;
-  } else (this.delivery === "A Rock")
+  } else (this.deliveryMethod === "A Rock")
     this.price +=200;
-});
+      return "Your " + this.pizzaSize + " Krusty Krab pizza with " + this.pizzaToppings + "will arrive soon via " + this.deliveryMethod + "! Thanks for your order, and more importantly: Thanks for your money! Arr-ar-ar-ar-ar-ar! Your total is " + this.price;
+  });
 
+// USER-INTERFACE LOGIC
