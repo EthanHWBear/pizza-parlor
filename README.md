@@ -57,3 +57,14 @@ Describe: Pizza()
 Test 1: "It should return a Pizza object with two properties for toppings and size"
 Code: const myPizza = new Pizza(["anchovies", "pineapple"], "medium");
 Expected Output: Pizza { toppings: ["anchovies", "pineapple"], size: "medium" }
+
+#### Mindless chatter - notes to self:
+
+- Create a constructor that creates new pizzas. The pizzas will contain a delivery method, toppings, and a size within their object qualities.
+
+- Link customer input (using buttons from HTML) to the qualities in my object.
+
+- Once input is gathered, a new object will be created with customer inputted selections.
+
+- Create prototype that checks for if/else statements and adjusts price based on user-inputted choices.
+

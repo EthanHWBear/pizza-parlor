@@ -6,6 +6,7 @@ $(document).ready(function() {
       this.pizzaToppings = toppings;
       this.pizzaSize = size;
       this.deliveryMethod = delivery;
+      this.price = price;
     }
 
 
