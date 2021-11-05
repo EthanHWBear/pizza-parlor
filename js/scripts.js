@@ -12,32 +12,29 @@ $(document).ready(function() {
 
 //USER-INTERFACE LOGIC
 
-Pizza.prototype.yourOrder = function() {
-  return "Your " + this.pizzaSize + " Krusty Krab pizza with " + this.pizzaToppings + " & our secret sauce is on it's way! Thanks for your order, and more importantly; thanks for your money! Arr-ar-ar-ar-ar-ar!";
-};
-
-//Pizza Prices
-Pizza.prototype.modifyCost = function() {
-  if (this.pizzaToppings == "Anchovies" || this.pizzaToppings == "Krabby Patty secret formula (discontinued)" || this.pizzaToppings == "Coral") {
-    this.price += 2;
-  } else {
-    this.price;
-  }
   
+//Pizza Prices
+Pizza.prototype.price = function() {
+  if (this.pizzaToppings === "Anchovies") {
+    this.price += 2;
+  } else if (this.pizzaToppings === "Krabby Patty secret formula (discontinued)"){
+    this.price += 3;
+  } else (this.pizzaToppings === "Coral") {
+    this.price += 1;
 
-  if (this.delivery == "byFoot") {
+  if (this.pizzaSize === "Medium") {
+    this.price += 0;
+  } else if (this.pizzaSize === "Large") {
+    this.price += 4
+  } else (this.pizzaSize === "WUMBO") {
+    this.price += 250
+  }
+
+  if (this.delivery === "byFoot") {
     this.price -= 3;
-  } else {
-    this.price;
+  } else if (this.delivery === "Boat") {
+    this.price +=5;
+  } else (this.delivery === "A Rock") {
+    this.price +=200;
   }
-
-  if (this.size == "Child" || this.size === "Senior") {
-    this.price -= 2;
-  } else {
-    this.price;
-  }
-  return this.price;
-};
-
-
-$
+}
