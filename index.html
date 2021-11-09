@@ -22,41 +22,41 @@
           <p>Select your toppings:</p>
           <div class="checkbox">
             <label>
-              <input type="checkbox" name="toppings" value="1">
+              <input id="coral" type="checkbox" name="toppings" value="1">
               Coral
             </label>
           </div>
           <div class="checkbox">
             <label>
-              <input type="checkbox" name="toppings" value="1">
+              <input id="anchovies" type="checkbox" name="toppings" value="1">
               <font>anchovies...</font>... ANCHOVIIIIIIEEES!!
             </label>
           </div>
           <div class="checkbox">
             <label>
-              <input type="checkbox" name="toppings" value="1">
+              <input id="formula" type="checkbox" name="toppings" value="1">
               Krabby Patty secret formula (discontinued)
             </label>
           </div>
           <br>
-      </div>
+      <!-- </div> -->
         <div class="box">
           <p>Choose the size of your 'za:</p>
           <div class="radio">
             <label>
-              <input type="radio" name="size" value="1">
+              <input type="radio" name="size" value="Medium">
               Medium
             </label>
           </div>
           <div class="radio">
           <label>
-            <input type="radio" name="size" value="2">
+            <input type="radio" name="size" value="Large">
             Large
           </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="size" value="3">
+              <input type="radio" name="size" value="WUMBO">
               <em>WUMBO</em> <font>*additional delivery time required</font>
             </label>
           </div>
@@ -66,19 +66,19 @@
           <p>Delivery Method</p>
           <div class="radio">
           <label>
-            <input type="radio" name="delivery" value="1">
-            Boat (30-45 estimated minutes delivery time)
-          </label>
-          </div>
-          <div class="radio">
-          <label>
-            <input type="radio" name="delivery" value="2">
+            <input type="radio" name="delivery" value="byFoot">
             by Foot (*2 hours later*)
           </label>
           </div>
           <div class="radio">
           <label>
-            <input type="radio" name="delivery" value="3">
+            <input type="radio" name="delivery" value="Boat">
+            Boat (30-45 estimated minutes delivery time)
+          </label>
+          </div>
+          <div class="radio">
+          <label>
+            <input type="radio" name="delivery" value="A Rock">
             A Rock (the pioneers used to ride these babies for miles)
           </label>
           </div>
@@ -86,5 +86,11 @@
         </div>
         <div class="box">
           <button type="button" class="submitForm">Place Your Order</button>
+          </div>
+          <div id="order">
+
+          </div>
+        </form>
+        </div>
 </body>
 </html>
